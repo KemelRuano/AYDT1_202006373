@@ -9,5 +9,11 @@ def AgregarCancion():
     Detalle = jsondate.get('nombre') + ' | ' + jsondate.get('artista') + ' | ' + jsondate.get('album') 
     return {'Cancion Agregada Correctamente' : Detalle }
 
+
+@app.route('/VerCarnet' , methods=['GET'])
+def VerCarnet():
+    return {'Carnet' : 202006373}
+
+
 if __name__ == '__main__':
     app.run(debug=True)

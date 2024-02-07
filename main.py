@@ -6,7 +6,7 @@ app = Flask(__name__)
 def AgregarCancion():
     if request.method == 'POST':
         jsondate = request.get_json() 
-    Detalle = jsondate.get('nombre') + ' | ' + jsondate.get('artista') + ' | ' + jsondate.get('album') 
+    Detalle = jsondate.get('nombre') + ' | ' + jsondate.get('artista') + ' | ' + jsondate.get('genero') 
     return {'Cancion Agregada Correctamente' : Detalle }
 
 
